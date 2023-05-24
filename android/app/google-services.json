@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "55615513351",
+    "project_id": "forcodelabs-8ea4d",
+    "storage_bucket": "forcodelabs-8ea4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55615513351:android:8a7827d463694c9eb65ba2",
+        "android_client_info": {
+          "package_name": "br.pro.mateus.camera_exercicio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55615513351-oq51q85d4vm9e1cuitp06uvi1t8ea3jo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcKvwMG41sTzOeOoLZxlftybP2uMQPM7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55615513351-oq51q85d4vm9e1cuitp06uvi1t8ea3jo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "55615513351-qsp1ce977dule68gatedqg8neode456s.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.pro.mateus.cameraExercicio"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
