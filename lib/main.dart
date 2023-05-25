@@ -137,13 +137,38 @@ class DisplayPictureScreen extends StatelessWidget {
 
   const DisplayPictureScreen({super.key, required this.imagePath});
 
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Display the Picture')),
       // The image is stored as a file on the device. Use the `Image.file`
       // constructor with the given path to display the image.
-      body: Image.file(File(imagePath)),
+      body:  Column(
+        children: [
+          Image.file(File(imagePath)),
+          ElevatedButton(
+            onPressed: () {
+              // Code to execute when the button is pressed
+              // Add your desired functionality here
+              final storage = FirebaseStorage.instance.ref();
+              Reference? imagesRef = storage.child("images");
+
+              print("IMAGEPATH: $imagePath");
+              final metadata = SettableMetadata(contentType: "image/jpeg");
+
+
+              final uploadTask = imagesRef
+                  .child("uwu1.jpg")
+                  .putFile(File(imagePath), metadata);
+
+              uploadTask;
+            },
+            child: Text('Upload to firestore'),
+          ),
+        ],
+      ),
     );
   }
 }
